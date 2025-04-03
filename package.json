@@ -4,7 +4,7 @@
   "description": "Test project for generating static html from pug templates",
   "main": "index.js",
   "scripts": {
-    "writeHTML": "pug src/pages -o dist --pretty"
+    "writeHTML": "pug src/pages -o docs --pretty"
   },
   "keywords": [
     "test",
