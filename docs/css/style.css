@@ -1,3 +1,8 @@
+:root{
+	--transparent: rgba(100, 100, 100, .3);
+	--frosted: rgba(255, 255, 255, .3);
+}
+
 @font-face {
 	font-family: 'Urbanist';
 	src: url("../assets/Urbanist.woff2") format('woff2');
@@ -19,4 +24,31 @@ body{
 
 main{
 	flex-grow: 1
+}
+
+h1{
+	background-color: var(--frosted);
+	color: white;
+	padding: .2em 1em;
+	margin: 0;
+}
+
+nav{
+	background: var(--transparent);
+	padding: 2px 2em;
+	height:fit-content;
+}
+
+nav a{
+	padding-right: .5em;
+	color: white;
+}
+
+nav a:hover{
+	color: mediumpurple;
+}
+
+footer{
+	background: var(--transparent);
+	text-align: center;
 }
