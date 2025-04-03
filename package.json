@@ -4,9 +4,17 @@
   "description": "Test project for generating static html from pug templates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "writeHTML": "pug src/pages -o dist --pretty"
   },
-  "keywords": ["test", "pug", "html", "SSG"],
+  "keywords": [
+    "test",
+    "pug",
+    "html",
+    "SSG"
+  ],
   "author": "Sebastian Ebert",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.3"
+  }
 }
