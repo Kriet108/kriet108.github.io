@@ -4,17 +4,19 @@ html(lang='en')
     head  
       title Sebastian Ebert
       link(rel='stylesheet', type='text/css', href='css/style.css')
-  block main
+  block body
     body
-      h1 Sebastian Ebert
-      nav
-        a(href='index.html') Home
-        a(href='about.html') About
-        a(href='resume.html') Résumé
-        a(href='projects.html') Projects
-        a(href='skills.html') Skills
-        a(href='links.html') Links
-      block content
-  block footer  
-    p &copy; Sebastian Ebert, 2025
-     
+      header
+        h1 Sebastian Ebert
+        nav
+          a(href='index.html') Home
+          a(href='about.html') About
+          a(href='resume.html') Résumé
+          a(href='projects.html') Projects
+          a(href='skills.html') Skills
+          a(href='links.html') Links
+      main
+        block content
+      footer
+        block footer
+        p &copy; Sebastian Ebert, 2025
