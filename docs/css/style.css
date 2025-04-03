@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Urbanist';
+	src: url("../assets/Urbanist.woff2") format('woff2');
+}
+
+body{
+	color: white;
+	margin:0;
+	background-image: url("../assets/background.jpg");
+	background-size: cover;
+	font-family: 'Urbanist';
+}
