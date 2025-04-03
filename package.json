@@ -1,0 +1,12 @@
+{
+  "name": "puggenerationtest",
+  "version": "1.0.0",
+  "description": "Test project for generating static html from pug templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["test", "pug", "html", "SSG"],
+  "author": "Sebastian Ebert",
+  "license": "ISC"
+}
