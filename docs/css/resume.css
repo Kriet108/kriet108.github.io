@@ -1,0 +1,31 @@
+.details{
+	display:grid;
+	grid-template-areas:
+		"title time"
+		"contractor location";
+}
+
+
+.details p{
+	margin: 0;
+}
+
+.time{
+	grid-area: time;
+	font-style: italic;
+	justify-self: end;
+}
+
+.contractor{
+	grid-area: contractor;
+}
+
+.location{
+	grid-area: location;
+	justify-self: end;
+}
+
+.title{
+	grid-area: title;
+	font-weight: bold;
+}
