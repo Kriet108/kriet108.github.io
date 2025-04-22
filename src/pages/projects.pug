@@ -3,18 +3,24 @@ extends ../templates/layout
 block content
 	h2 Projects
 	h3 Major Incident Management Webapp and iPhone app
-	p ...
+	p A system for documenting, tracking, and communicating about Major Incidents effecting IT for manufacturing processes at BMW Plant Spartanburg.  This was a NodeJS/Express app hosted on a Kubernetes cluster in Azure, and connected to databases managed by the SQL team, and secured with OAuth.  Pages were written with PUG, CSS, and Javascript.  Other projects were split from this one to handle specific functions: a service to send emails, a service to handle user data, and a service that acted as a back-end for handling MIM data.  The last was used to support development of an iPhone application that was originally rewritten in Swift.  After a design team proposed a new design, I rewrote the application in SwiftUI, streamlining and improving it, and providing redundancy in case the website was ever down.
 
 	h3 GiftScan
-	p ...
+	p A project for BMW that involved the digitization of what was a manual process involving clipboards and visually checking employee IDs.  The project consisted of a fairly simple web page that took in an employee ID number and a selection from a predetermined set of 'gifts'.  These entries were saved to a database and used to check to make sure no one attempted to get more items than they were entitled to during a distribution.  During event periods, the application was used on mobile tablets equipped with badge scanners, allowing us to scan a badge and enter it directly into the web page, massively streamlining the process.  In case of issues with badge scanners, old badges, or other edge cases, badge numbers could be entered directly to allow for proper tracking of inventory.  Reports were also generated with the new data to allow for more accurate forecasting of future distribution needs.  This was a NodeJS/Express app hosted on a Kubernetes cluster in Azure, connected to databases managed by the SQL team.
+
+	h3 BMW Project rewriting and Azure setup
+	p When I joined BMW, I was tasked with rewriting exiting applications in Javascript and deploying them to the cloud.  The existing setup was a set of Java/PHP applications that were deployed to a websphere server hosted locally.  I built up our Azure infrastructure, connected it to internal databases with secure connections, implemented Infrastructure-as-Code with Terraform, and administered Kubernetes clusters.  Projects were then rewritten in Javascript, using Express and Pug, allowing for simple templating and easily teaching interns the new setup.  This also involved creating Jenkins setups for automated CI/CD of certain projects.
 
 	h3 Concentrix Life Insurance processing software
-	p ...
+	p While at Concentrix, I worked on numerous parts of the insurance processing system that ran nightly to process claims, print letters, and send updates.  This involved debugging, troubleshooting, architecting changes, implementation with Java, and rigorous testing that was submitted to Leads for approval before promotion to production.
 
 	h3 Personal Game Work
-	p ...
+	p At any given time, I am working on several game ideas, going from early design phases through implementation and testing.  While I have not yet published anything, I have experience working in the Unity3d and Godot game engines.  For both, I've dabbled in C#, and for Godot, I've primarily used Godotscript, which has similarities to Javascript.  I also have experience with 3D modeling, animation, and UI design.
+
+	h3 Childcare Professional Training Game
+	p As part of a contract, I was asked to help 'gamify' the training childcare professionals are required to complete every year.  Rather than sitting in a conference room and being lectured, the thought was that a childcare professional seeking their required training hours could complete courses structured as games.  I worked with my clients to design a game in which trainees move through a series of rooms, each presenting information or a challenge based on learned information, and allowing them to progress to a final test that would award them with their certification.  Challenges included general knowledge checks, pointing out errors in processes performed by NPCs, and so on.  The project was implemented in Unity3D with art I created that could later be replaced by something more polished.
 
 	h3 Sudoku Solver
-	p ...
+	p Started as an early programming project, I have implemented and re-implemented a sudoku solver several times, usually as a way to get a good grasp on a new language.  Typically, this allows me to not only figure out how to handle several data structures, but also reading in data from files, proper display of solutions, and inputting directly into a sudoku grid.  I've read that the most efficient solution method for Sudokus is essentially brute forcing random solutions, but this feels unsatisfying, so while it is not the most efficient, I have typically implemented my solver in such a way as to use the actual techniques used by human sudoku solvers, allowing people to see the thought process and steps required to solve a puzzle.
 
 	//- ...Add more here!
