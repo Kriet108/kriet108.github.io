@@ -1,3 +1,22 @@
+:root{
+	--padding-left: 2em;
+}
+
 main {
 	font-weight: bolder;
+	flex-grow: 0 !important;
+	margin:auto !important;
+}
+
+main p{
+	font-size: xxx-large;
+	margin: 0;
+}
+
+main p:nth-child(2){
+	padding-left: calc(var(--padding-left));
+}
+
+main p:nth-child(3){
+	padding-left: calc(var(--padding-left)  * 2);
 }

@@ -15,8 +15,10 @@ html, body{
 body{
 	color: white;
 	margin:0;
-	background-image: url("../assets/background.jpg");
+	background: url("../assets/background.jpg");
 	background-size: cover;
+	background-color:rgba(0, 0, 0, 0.529);
+	background-blend-mode: multiply;
 	font-family: 'Urbanist';
 	display: flex;
 	flex-direction: column;
@@ -24,7 +26,7 @@ body{
 
 main{
 	flex-grow: 1;
-	margin: 0em 1em 2em 1em;
+	margin: 0em 2em;
 }
 
 h1{
