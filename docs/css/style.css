@@ -44,11 +44,13 @@ nav{
 
 nav a{
 	padding-right: .5em;
-	color: white;
 }
 
-nav a:hover{
-	color: mediumpurple;
+a{
+	color: white;
+	&:hover{
+		color: mediumpurple;
+	}
 }
 
 footer{
