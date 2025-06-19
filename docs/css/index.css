@@ -6,6 +6,7 @@ main {
 	font-weight: bolder;
 	flex-grow: 0 !important;
 	margin:auto !important;
+	display: grid;
 }
 
 main p{
@@ -14,9 +15,21 @@ main p{
 }
 
 main p:nth-child(2){
-	padding-left: calc(var(--padding-left));
+	justify-self: center;
 }
 
 main p:nth-child(3){
-	padding-left: calc(var(--padding-left)  * 2);
+	justify-self: right;
+}
+
+@media screen and (min-width: 600px) {
+	main p:nth-child(2){
+		justify-self: inherit;
+		padding-left: calc(var(--padding-left));
+	}
+
+	main p:nth-child(3){
+		justify-self: inherit;
+		padding-left: calc(var(--padding-left)  * 2);
+	}
 }
